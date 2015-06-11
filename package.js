@@ -1,6 +1,6 @@
 Package.describe({
   name: 'anderson916:meteor-alipay',
-  version: '0.0.1',
+  version: '0.0.3',
   // Brief, one-line summary of the package.
   summary: 'a simple wrapper for alipay package',
   // URL to the Git repository containing the source code for this package.
@@ -16,8 +16,8 @@ Npm.depends({
 
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
-  api.addFiles('meteor-alipay.js');
-  api.export('Alipay');
+  api.addFiles('meteor-alipay.js', 'server');
+  api.export('Alipay', ['server']);
 });
 
 Package.onTest(function(api) {
