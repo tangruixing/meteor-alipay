@@ -17,6 +17,7 @@ Npm.depends({
 Package.onUse(function(api) {
   api.versionsFrom('1.1.0.2');
   api.addFiles('meteor-alipay.js');
+  api.export('Alipay');
 });
 
 Package.onTest(function(api) {
